@@ -4,7 +4,6 @@ RUN apt-get update
 RUN apt-get install -y python python-dev python-lxml python-pip git
 
 RUN pip install 'WTForms<=1.0.5'
-RUN pip install feedparser  #Missing from setups
 
 # Get all the data
 RUN pip install -e git://github.com/veekun/pokedex.git#egg=pokedex
