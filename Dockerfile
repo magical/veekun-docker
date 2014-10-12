@@ -2,12 +2,6 @@ FROM ubuntu
 
 RUN apt-get update
 RUN apt-get install -y python python-dev python-lxml python-pip git
-#RUN apt-get install -y postgresql
-
-#ADD veekun-install.sh veekun-install.sh
-#RUN createdb pokedex
-#RUN psql -c 'ALTER USER root'
-#RUN sh veekun-install.sh
 
 RUN pip install 'WTForms<=1.0.5'
 RUN pip install feedparser  #Missing from setups
