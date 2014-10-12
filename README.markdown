@@ -7,7 +7,7 @@ TODO:
 
 - /var/log should probably be a volume mount.
 
-- The container is 900 MB. Try to pare that down.
+- The container is 826 MB. Try to pare that down.
 
 - Drop privileges.
 

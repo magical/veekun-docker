@@ -1,7 +1,12 @@
-FROM ubuntu
+FROM google/python
 
-RUN apt-get update
-RUN apt-get install -y python python-dev python-lxml python-pip git
+# Install the distro version of lxml.
+# Otherwise we'd have to install libxml-dev so pip could build it.
+RUN apt-get install -y --no-install-recommends python-lxml
+
+# Google's python image has a new version of pip and an old version of setuptools.
+# They don't always play together nicely.
+RUN pip install -U setuptools
 
 RUN pip install 'WTForms<=1.0.5'
 
