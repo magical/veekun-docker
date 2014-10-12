@@ -1,5 +1,8 @@
 Builds a [docker][] container for [veekun][].
 
+[docker]: https://docker.com
+[veekun]: http://veekun.com
+
 TODO:
 
 - /var/log should probably be a volume mount.
