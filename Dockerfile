@@ -21,7 +21,7 @@ RUN git clone git://git.veekun.com/pokedex-media.git /usr/share/pokedex-media
 # Set up the database and lookup index
 RUN mkdir /var/cache/veekun /var/lib/veekun /var/log/veekun
 RUN pokedex load -e sqlite:///var/lib/veekun/pokedex.sqlite
-RUN pokedex reindex -e sqlite:///var/lib/veekun/pokedex.sqlite -i /var/lib/veekun/pokedex-index
+RUN pokedex reindex -e sqlite:///var/lib/veekun/pokedex.sqlite -i /var/cache/veekun/pokedex-index
 
 # Fix an incomptability with webob
 RUN sed -i 's|\.exception$||' /usr/local/lib/python2.7/dist-packages/pylons/controllers/util.py
