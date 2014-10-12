@@ -8,7 +8,7 @@ RUN pip install 'WTForms<=1.0.5'
 # Get all the data
 RUN pip install -e git://github.com/veekun/pokedex.git#egg=pokedex
 RUN pip install -e git://github.com/veekun/spline.git#egg=spline
-RUN pip install -e git://github.com/veekun/spline-pokedex.git#egg=splinext.pokedex
+RUN pip install -e git://github.com/veekun/spline-pokedex.git#egg=spline_pokedex
 RUN git clone git://github.com/veekun/veekun.git /usr/share/veekun
 RUN git clone git://git.veekun.com/pokedex-media.git /usr/share/pokedex-media
 
