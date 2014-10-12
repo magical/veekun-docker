@@ -3,6 +3,14 @@ Builds a [docker][] container for [veekun][].
 [docker]: https://docker.com
 [veekun]: http://veekun.com
 
+Build:
+
+    docker build -t veekun .
+
+Run:
+
+    docker run -d -p 80:80 veekun
+
 TODO:
 
 - /var/log should probably be a volume mount.
